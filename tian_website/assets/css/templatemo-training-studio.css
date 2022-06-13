@@ -723,8 +723,13 @@ subscribe
 */
 
 #call-to-action {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 120px 0px;
-  background-image: url(/assets/images/ref.svg);
+  height: 100%;
+  background-image: url(/assets/images/referance.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -749,7 +754,12 @@ subscribe
   color: #fff;
   margin: 15px 0px 25px 0px;
 }
-
+.ref-logo {
+  display: flex;
+  height: 5rem;
+  width: auto;
+  margin: 2rem;
+}
 
 
 /*
@@ -870,6 +880,8 @@ schedule
   width: 100%;
   text-align: center;
   border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 
 #schedule table tbody {
@@ -1284,7 +1296,7 @@ responsive
     margin-bottom: 110px;
   }
   #features .feature-item {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   #our-classes .tabs-content {
     margin-left: 0px;
@@ -1306,12 +1318,73 @@ responsive
     flex-direction: row;
     justify-content: center;
   }
-
-}
-
-@media (max-width: 450px) {
+  .ref-logo {
+    height: 3rem;
+  }
+  .teknik-ozellikler {
+    flex-direction: column;
+    font-size: 0.75rem;
+  }
   .feature-item .right-content a.text-button {
     margin-left: 130px;
   }
+  .main-banner .caption h2 {
+    font-size: 3rem;
+  }
+  .feature-item .left-icon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .feature-item .right-content > h4 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+  }
+  .feature-item .right-content > p {
+    font-size: .75rem;
+  }
+  #schedule {
+    display: none;
+  }
+  .header-area .logo {
+    margin-left: 0;
+  }
+  .header-area .main-nav .logo {
+    width: 120px;
+  }
+
 }
+
+/* @media (max-width: 450px) {
+  .feature-item .right-content a.text-button {
+    margin-left: 130px;
+  }
+  .main-banner .caption h2 {
+    font-size: 3rem;
+  }
+  .feature-item .left-icon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .feature-item .right-content > h4 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+  }
+  .feature-item .right-content > p {
+    font-size: .75rem;
+  }
+  #schedule {
+    display: none;
+  }
+  .header-area .logo {
+    margin-left: 0;
+  }
+  .header-area .main-nav .logo {
+    width: 120px;
+  }
+  
+} */
 
